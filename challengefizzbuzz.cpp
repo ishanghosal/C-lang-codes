@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int tc,i,a[100],p,j;
+	scanf("%d",&tc);
+	for(i=0;i<tc;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<tc;i++)
+	{
+		p=a[i];
+		for(j=1;j<=p;j++)
+		if(j%3==0&&j%5!=0)
+	{
+		printf("\nFizz");
+	}
+	else
+	if(j%3!=0&&j%5==0)
+	{
+		printf("\nBuzz");
+	}
+	else
+	if(j%3==0&&j%5==0)
+	{
+		printf("\nFizzBuzz");
+	}
+	else
+	printf("\n%d",j);
+	}
+}
